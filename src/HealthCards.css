@@ -1,0 +1,65 @@
+.metrics-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  
+}
+
+.card-wrapper {
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.respiratory-rate { background-color: #E0F3FA; }
+.temperature { background-color: #FFE6E9; }
+.heart-rate { background-color: #FFE6F1; }
+
+.card {
+  background-color: inherit;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  
+}
+
+.icon-container {
+  width: 3rem;
+  height: 3rem;
+ 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.metric-icon {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.metric-title {
+  color: #4B5563;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.metric-value {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.metric-status {
+  font-size: 0.875rem;
+}
+
+.normal { color: #059669; }
+.below-average { color: #3B82F6; }
+
+@media (max-width: 768px) {
+  .metrics-container {
+    grid-template-columns: 1fr;
+  }
+}

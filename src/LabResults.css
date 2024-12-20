@@ -1,0 +1,52 @@
+.lab-container {
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  width: 100%;
+  color:#1a1a1a
+}
+
+h1 {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.results-list {
+  background-color: #f8f9fc;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.download-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #1a1a1a;
+  padding: 8px;
+}
+
+.download-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.download-button:hover:not(.disabled) {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}

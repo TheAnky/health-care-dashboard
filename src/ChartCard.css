@@ -1,0 +1,69 @@
+.history-container {
+    background-color: #F4F0FE;
+    border-radius: 12px;
+    padding: 0.25rem 1rem;
+    margin: 10px 20px;
+}
+
+.chart-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart-container{
+    display: flex;
+    align-items: center;
+}
+
+.chart {
+    flex: 2;
+}
+
+.reading {
+    font-size: large;
+    font-weight: bold;
+}
+
+.labels-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+    margin: 5px;
+}
+
+.systolic {
+    flex: 1;
+    border-bottom: lightgrey solid 1px;
+    .legend {
+        display: flex;
+        align-items:center;
+        justify-content: flex-start;
+            .circle {
+                    background-color: #E66FD2;
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
+    }
+
+}
+
+.diastolic {
+    flex: 1;
+        .legend {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                    .circle {
+                            background-color: #8C6FE6;
+                            height: 8px;
+                            width: 8px;
+                            border-radius: 50%;
+                            margin-right: 5px;
+                        }
+            }
+
+}
